@@ -1,0 +1,9 @@
+<h1><%= @amount + "d" + @dice_number %></h1>
+
+<ul> 
+  <% @amount.to_i.times do %>
+    <li>
+      <%= rand(1..@dice_number.to_i) %>
+    </li>
+  <% end %>
+</ul>
